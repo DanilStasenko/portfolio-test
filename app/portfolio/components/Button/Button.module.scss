@@ -1,0 +1,69 @@
+@import "../../../vars.scss";
+.btnBox {
+  margin: 0 auto;
+	position: relative;
+}
+
+.btn {
+	display: flex;
+	position: absolute;
+	left: calc(50% - 40px);
+	transform: translate(-50%, -50%);
+	padding: 12px 20px 14px 26px;
+	background: $bg-color;
+	white-space: nowrap;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	color: $button-border;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 16.2px;
+	text-transform: uppercase;
+	border: none;
+	outline: none;
+	&:hover {
+		text-decoration: underline;
+		cursor: pointer;
+	}
+}
+.btn:before,
+.btn:after,
+.btnAddittional:before,
+.btnAddittional:after
+{
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: $button-border;
+    transition: 1s;
+    mix-blend-mode: hue;
+}
+
+.btn:before
+{
+    top: -2px;
+    left: -2px
+}
+.btn:after
+{
+    top: -2px;
+    right: -2px;
+}
+.btnAddittional:before
+{
+    bottom: -2px;
+    left: -2px
+}
+.btnAddittional:after
+{
+    bottom: -2px;
+    right: -2px
+}
+
+.arrow {
+	margin-left: 4px;
+	margin-top: 1px;
+}

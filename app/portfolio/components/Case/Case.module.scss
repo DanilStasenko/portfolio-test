@@ -1,0 +1,16 @@
+@import '../../../vars.scss';
+.container {
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	row-gap: 20px;
+	color: $white-text;
+}
+
+.cardBottom {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+

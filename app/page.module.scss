@@ -1,0 +1,13 @@
+@import './vars.scss';
+
+.text {
+	color: $white-text;
+}
+
+.link {
+	color: $yellow-text;
+	text-decoration: none;
+	&:hover {
+		text-decoration: underline;
+	}
+}
