@@ -78,8 +78,5 @@
 	}
 	&:hover {
 		color: $yellow-text;
-		&::after {
-			background-image: url('/btnIconYellow.svg');
-		}
 	}
 }
