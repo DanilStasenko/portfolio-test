@@ -8,6 +8,7 @@ export default function Home() {
 			<Link className={style.link} href="/portfolio"><h2>Portfolio</h2></Link>
 			<Link className={style.link} href="/faq"><h2>Faq</h2></Link>
 			<Link className={style.link} href="/modal-page"><h2>Page with modal</h2></Link>
+			<Link className={style.link} href="/constructor"><h2>Constructor</h2></Link>
 		</>
   )
 }
