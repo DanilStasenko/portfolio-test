@@ -6,6 +6,10 @@ const manrope = Manrope({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'WBS',
+  robots: {
+    index: false,
+    follow: false
+  },
 }
 
 export default function RootLayout({
