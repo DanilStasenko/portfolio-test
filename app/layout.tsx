@@ -1,3 +1,4 @@
+import { ReduxProvider } from '@/redux/provider'
 import './globals.scss'
 import type { Metadata } from 'next'
 import { Manrope } from 'next/font/google'
@@ -21,7 +22,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={manrope.className}>
 				<main className='container'>
-					{children}
+          <ReduxProvider>{children}</ReduxProvider>
 				</main>	
 			</body>
     </html>
