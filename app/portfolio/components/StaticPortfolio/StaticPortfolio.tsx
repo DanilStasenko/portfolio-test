@@ -1,7 +1,6 @@
 import { ICard } from "../../models/ICard";
 import Card from "../Card/Card";
 import style from "./StaticPortfolio.module.scss"; 
-import Image from "next/image";
 
 type Props = {
 	cards: ICard[]
