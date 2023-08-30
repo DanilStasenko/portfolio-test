@@ -1,0 +1,13 @@
+.wrapper {
+    color: white;
+}
+.extraButton {
+    margin-top: 100px;
+}
+
+@media (max-width: 500px) {
+    .extraButton_fullWidth {
+        background-color: aquamarine;
+        width: 100%;
+    }
+}

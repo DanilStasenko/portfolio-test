@@ -12,6 +12,8 @@ export default function Home() {
 			<Link className={style.link} href="/modal-redux"><h2>Page with modal REDUX</h2></Link>
 			<Link className={style.link} href="/cases-redux"><h2>All Cases REDUX</h2></Link>
 			<Link className={style.link} href="/cases-pagination-redux"><h2>Cases with pagination REDUX</h2></Link>
+			<Link className={style.link} href="/button-page"><h2>Button</h2></Link>
+			<Link className={style.link} href="/button-page-css"><h2>Button CSS</h2></Link>
 		</>
   )
 }

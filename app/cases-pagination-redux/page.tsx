@@ -13,11 +13,11 @@ export default function SomeCasesRedux() {
 
     const {data} = useGetSomeCasesQuery(start);
     
-    console.log('init>>>',data)
-    console.log("start>>>", start)
-    console.log("total>>>>",total)
-    console.log("cardsEnd>>>",cardsEnd)
-    console.log("cards>>>",cases)
+    // console.log('init>>>',data)
+    // console.log("start>>>", start)
+    // console.log("total>>>>",total)
+    // console.log("cardsEnd>>>",cardsEnd)
+    // console.log("cards>>>",cases)
 
     useEffect(() => {
         if (data) {
@@ -28,15 +28,14 @@ export default function SomeCasesRedux() {
   
     function handleClick() {
         if (total && (start + 2 >= total)) {
-            setStart(0)
             setCardsEnd(true)
+            setStart(0)
             setCases([])
         } else {
             setStart(prev => prev + 2)
+            setCardsEnd(false)
+            data && setCases(prevCards => [...prevCards, ...data.data])
         }
-        
-        setCardsEnd(false)
-        data && setCases(prevCards => [...prevCards, ...data.data])
     }
 
     return (
